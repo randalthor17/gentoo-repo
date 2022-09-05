@@ -10,7 +10,7 @@ inherit desktop xdg-utils
 
 DESCRIPTION="No Nonsense Neovim Client in Rust"
 HOMEPAGE="https://github.com/Kethku/neovide"
-SRC_URI="https://github.com/Kethku/neovide/releases/download/$PV/neovide.tar.gz"
+SRC_URI="https://github.com/Kethku/neovide/releases/download/$PV/neovide.tar.gz -> $P.tar.gz"
 KEYWORDS="~amd64"
 
 LICENSE="MIT"
@@ -29,7 +29,6 @@ DEPEND="
 "
 RDEPEND="
 	$DEPEND
-	!app-editors/neovide
 "
 
 S="$PORTAGE_TMPDIR/portage/$CATEGORY/$PF"
@@ -39,7 +38,7 @@ src_unpack() {
 }
 
 src_install() {
-	dobin "$WORKDIR"/target/release/neovide
+	dobin "$WORKDIR"/neovide
 
 	domenu "$FILESDIR"/neovide.desktop
 	doicon -s scalable "$FILESDIR"/neovide.svg
