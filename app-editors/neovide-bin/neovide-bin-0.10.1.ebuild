@@ -17,7 +17,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE=""
 
-RESTRICT="test"
+RESTRICT="mirror test"
 
 DEPEND="
 	app-editors/neovim

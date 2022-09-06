@@ -7,7 +7,7 @@ inherit autotools
 DESCRIPTION="An emoji selector plugin for Rofi that copies the selected emoji to the clipboard, among other things."
 HOMEPAGE="https://github.com/Mange/rofi-emoji"
 SRC_URI="https://github.com/Mange/rofi-emoji/archive/v${PV}/${P}.tar.gz -> ${P}.tar.gz"
-
+RESTRICT="mirror"
 
 LICENSE="MIT"
 SLOT="0"
