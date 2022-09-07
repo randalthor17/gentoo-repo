@@ -13,7 +13,7 @@ SRC_URI="https://pypi.python.org/packages/source/p/${PN}/${P}.tar.gz -> ${P}.tar
 LICENSE="MPL-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-RESTRICT
+RESTRICT="mirror"
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}
